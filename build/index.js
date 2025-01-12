@@ -20,6 +20,7 @@ const HTMLFlipBook = (props) => {
             pageFlip$1.current.destroy();
         }
     }, []);
+    React.useImperativeHandle(props.ref, () => pageFlip$1.current);
     const removeHandlers = React.useCallback(() => {
         const flip = pageFlip$1.current;
         if (flip) {

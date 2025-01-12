@@ -2,6 +2,7 @@ import React, {
   ReactElement,
   useCallback,
   useEffect,
+  useImperativeHandle,
   useRef,
   useState,
 } from "react"
@@ -37,6 +38,8 @@ const HTMLFlipBook = (props: HTMLFlipBook) => {
       pageFlip.current.destroy()
     }
   }, [])
+
+  useImperativeHandle(props.ref, () => pageFlip.current as PageFlip)
 
   const removeHandlers = useCallback(() => {
     const flip = pageFlip.current

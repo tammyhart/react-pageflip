@@ -1,4 +1,4 @@
-import React, { useRef, useState, useCallback, useEffect } from 'react';
+import React, { useRef, useState, useCallback, useImperativeHandle, useEffect } from 'react';
 import { PageFlip } from 'page-flip';
 
 var SizeType;
@@ -18,6 +18,7 @@ const HTMLFlipBook = (props) => {
             pageFlip.current.destroy();
         }
     }, []);
+    useImperativeHandle(props.ref, () => pageFlip.current);
     const removeHandlers = useCallback(() => {
         const flip = pageFlip.current;
         if (flip) {
