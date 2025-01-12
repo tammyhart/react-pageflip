@@ -6,8 +6,15 @@ import React, {
   useState,
 } from "react"
 
-import { PageFlip, SizeType } from "page-flip"
+import { PageFlip } from "page-flip"
 import type { PartialFlipSetting, EventProps } from "./settings"
+
+enum SizeType {
+  /** Dimensions are fixed */
+  FIXED = "fixed",
+  /** Dimensions are calculated based on the parent element */
+  STRETCH = "stretch",
+}
 
 type HTMLFlipBook = PartialFlipSetting &
   EventProps & {

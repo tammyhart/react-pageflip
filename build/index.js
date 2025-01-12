@@ -3,6 +3,13 @@
 var React = require('react');
 var pageFlip = require('page-flip');
 
+var SizeType;
+(function (SizeType) {
+    /** Dimensions are fixed */
+    SizeType["FIXED"] = "fixed";
+    /** Dimensions are calculated based on the parent element */
+    SizeType["STRETCH"] = "stretch";
+})(SizeType || (SizeType = {}));
 const HTMLFlipBook = (props) => {
     const htmlElementRef = React.useRef(null);
     const childRef = React.useRef([]);
@@ -83,7 +90,7 @@ const HTMLFlipBook = (props) => {
         if (pages.length > 0 && childRef.current.length > 0) {
             removeHandlers();
             if (htmlElementRef.current && !pageFlip$1.current) {
-                pageFlip$1.current = new pageFlip.PageFlip(htmlElementRef.current, Object.assign(Object.assign({}, props), { size: props.size === "fixed" ? pageFlip.SizeType.FIXED : pageFlip.SizeType.STRETCH }));
+                pageFlip$1.current = new pageFlip.PageFlip(htmlElementRef.current, Object.assign(Object.assign({}, props), { size: props.size === "fixed" ? SizeType.FIXED : SizeType.STRETCH }));
             }
             if (!((_a = pageFlip$1.current) === null || _a === undefined ? undefined : _a.getFlipController())) {
                 (_b = pageFlip$1.current) === null || _b === undefined ? undefined : _b.loadFromHTML(childRef.current);

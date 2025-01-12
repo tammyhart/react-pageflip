@@ -1,6 +1,13 @@
 import React, { useRef, useState, useCallback, useEffect } from 'react';
-import { PageFlip, SizeType } from 'page-flip';
+import { PageFlip } from 'page-flip';
 
+var SizeType;
+(function (SizeType) {
+    /** Dimensions are fixed */
+    SizeType["FIXED"] = "fixed";
+    /** Dimensions are calculated based on the parent element */
+    SizeType["STRETCH"] = "stretch";
+})(SizeType || (SizeType = {}));
 const HTMLFlipBook = (props) => {
     const htmlElementRef = useRef(null);
     const childRef = useRef([]);
