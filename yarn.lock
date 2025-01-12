@@ -413,6 +413,11 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
   integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
 
+"@types/page-flip@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@types/page-flip/-/page-flip-2.0.3.tgz#c4ef5a70c914ccec2938e69d4dca11d8f2b3cdb4"
+  integrity sha512-3scLJ0AqpEtp7JWkmRjkwFTR+4O5cy9imX8K12+t5p8HVfFCN2GUhGDT+yqOV5lqcMkST2qgwzWF25GYp1Sf5A==
+
 "@types/postcss-modules-local-by-default@^4.0.2":
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/@types/postcss-modules-local-by-default/-/postcss-modules-local-by-default-4.0.2.tgz#8fee7513dd1558d74713d817c183a33a6dc583f9"
@@ -426,6 +431,13 @@
   integrity sha512-//ygSisVq9kVI0sqx3UPLzWIMCmtSVrzdljtuaAEJtGoGnpjBikZ2sXO5MpH9SnWX9HRfXxHifDAXcQjupWnIQ==
   dependencies:
     postcss "^8.0.0"
+
+"@types/react@^19.0.4":
+  version "19.0.4"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-19.0.4.tgz#ad1270e090118ac3c5f0928a29fe0ddf164881df"
+  integrity sha512-3O4QisJDYr1uTUMZHA2YswiQZRq+Pd8D+GdVFYikTutYsTz+QZgWkAPnP7rx9txoI6EXKcPiluMqWPFV3tT9Wg==
+  dependencies:
+    csstype "^3.0.2"
 
 "@types/resolve@1.20.2":
   version "1.20.2"
@@ -902,6 +914,11 @@ csso@^4.2.0:
   integrity sha512-wvlcdIbf6pwKEk7vHj8/Bkc0B4ylXZruLvOgs9doS5eOsOpuodOV2zJChSpkp+pRpYQLQMeF04nr3Z68Sta9jA==
   dependencies:
     css-tree "^1.1.2"
+
+csstype@^3.0.2:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.3.tgz#d80ff294d114fb0e6ac500fbf85b60137d7eff81"
+  integrity sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==
 
 data-view-buffer@^1.0.2:
   version "1.0.2"

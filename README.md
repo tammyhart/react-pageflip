@@ -1,4 +1,4 @@
-[![GitHub license](https://img.shields.io/github/license/Nodlik/react-pageflip)](https://github.com/Nodlik/react-pageflip/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/react-pageflip)](https://www.npmjs.com/package/react-pageflip) [![npm](https://img.shields.io/npm/dm/react-pageflip)](https://npmcharts.com/compare/react-pageflip?minimal=true) [![](https://img.shields.io/badge/support-buymeacoffee-orange)](https://www.buymeacoffee.com/nndlik)
+[![GitHub license](https://img.shields.io/github/license/tammyhart/react-pageflip)](https://github.com/tammyhart/react-pageflip/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/react-pageflip)](https://www.npmjs.com/package/react-pageflip) [![npm](https://img.shields.io/npm/dm/react-pageflip)](https://npmcharts.com/compare/react-pageflip?minimal=true) [![](https://img.shields.io/badge/support-buymeacoffee-orange)](https://www.buymeacoffee.com/nndlik)
 
 # Version 2.0.4
 
@@ -37,7 +37,7 @@ You can install the latest version using npm:
 ### Basic Usage
 
 ```jsx
-import HTMLFlipBook from "react-pageflip";
+import HTMLFlipBook from "react-pageflip"
 
 function MyBook(props) {
   return (
@@ -47,7 +47,7 @@ function MyBook(props) {
       <div className="demoPage">Page 3</div>
       <div className="demoPage">Page 4</div>
     </HTMLFlipBook>
-  );
+  )
 }
 ```
 
@@ -64,8 +64,8 @@ const Page = React.forwardRef((props, ref) => {
       <p>{props.children}</p>
       <p>Page number: {props.number}</p>
     </div>
-  );
-});
+  )
+})
 
 function MyBook(props) {
   return (
@@ -75,7 +75,7 @@ function MyBook(props) {
       <Page number="3">Page text</Page>
       <Page number="4">Page text</Page>
     </HTMLFlipBook>
-  );
+  )
 }
 ```
 
