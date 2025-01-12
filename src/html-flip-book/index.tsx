@@ -130,4 +130,6 @@ const HTMLFlipBookForward = React.forwardRef(
   }
 );
 
-export const HTMLFlipBook = React.memo(HTMLFlipBookForward);
+const HTMLFlipBook = React.memo(HTMLFlipBookForward);
+
+export default HTMLFlipBook;
